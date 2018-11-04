@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>						
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Detector de caracteres repetidos</title>	
+		<link rel="stylesheet" href="bootstrap.css">
+		<script type="text/javascript" src="script.js"></script>	
+	</head>
+	<body class="bg-light" >	
+		<div class="jumbotron mx-4 p-3 my-4 mb-4 shadow-custom"> 
+			<h1 class="display-5">Encontre a letra que se repete um número par de vezes</h2>
+			<hr class="my-3">
+			<p class="lead">
+			Este algoritmo realiza a busca por letras repetidas, onde será retornado o caractere que aparecer repetido um número par de vezes.<br>
+			No entanto, se houver mais de um caractere nesta condição, não haverá retorno.<br>
+			</p>
+			<p class="lead">
+			Ex: abracadabra (letra 'a' aparece 5 vezes e as letras 'b' e 'r' aparecem 2, logo, não há retorno: '--')<br>
+			Ex: banana (letra 'a' aparece 3 vezes e 'n' 2, retorna: 'n')<br>
+			Ex: ovo (retorna: 'o') 
+			</p>
+		</div>	
+
+		<div class="container col-md-6">
+			<form>
+				<input class="form-control ml-2"  type="search" id="str-input" placeholder="Entre com uma string de a-z">
+				<small class="form-text text-muted ml-3 mb-4">Apenas letras minúsculas de a - z sem acento, e no mínimo 2 caracteres.</small>
+			</form>
+			<div class="col-md-12 text-center">
+				<button class="btn btn-dark mb-4" type="button" onclick="findRepeatedChars()">Enviar</button>
+				<button class="btn btn-dark mb-4" type="submit" onclick="clearAll()">Limpar</button>
+			</div>
+			 
+			<table class="table table-sm my-2 mx-2 text-dark">
+				<thead class="thead-light">
+					<tr>
+						<th >Input</th>
+						<th  style="width: 50%">Output</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="show-input"></td>
+						<td id="show-output"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
+
+
+
