@@ -1,4 +1,4 @@
-# letter_frequency
+# Manipulação de strings
 
 Aplicação que identifica e imprime a única letra que aparece um número par de vezes, seguindo os critérios:
 
